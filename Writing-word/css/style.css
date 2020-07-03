@@ -1,0 +1,45 @@
+#tam {
+    height: 340px;
+    font-size: 50px;
+    display: flex;
+    padding-top: 300px;
+    padding-left: 5%;
+    font-family: 'Fredericka the Great', cursive;
+    font-style: italic;
+    background-image: url("img/bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second>i {
+    left: 20%;
+    animation-duration: 5s;
+    position: absolute;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+@keyframes write {
+    from {
+        left: 20%;
+    }
+    80% {
+        left: 35%;
+        transform: rotateZ(0deg);
+    }
+    to {
+        left: 35%;
+        transform: rotateZ(180deg);
+    }
+}
+
+@keyframes erase {
+    from {
+        left: 35%;
+        transform: rotateZ(180deg);
+    }
+    to {
+        left: 20%;
+        transform: rotateZ(180deg);
+    }
+}
